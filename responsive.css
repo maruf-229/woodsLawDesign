@@ -1,0 +1,141 @@
+
+@media (max-width: 1440px) {
+    .logo-container {
+        width: 190px;
+        height: 97px;
+        left: 93px;
+    }
+
+    .logo-img {
+        height: 107px;
+    }
+
+    .nav-links {
+        margin-left: 25%;
+        gap: 20px;
+    }
+
+    .flag-overlay {
+        bottom: -16%;
+        left: 27%;
+    }
+
+    .hero-image-container {
+        height: 70%;
+    }
+
+    .hero-title {
+        font-size: 45px;
+    }
+
+
+    .criminal-defense-section {
+        padding: 90px 75px;
+        gap: 0px;
+    }
+
+    .section-title, .header h1, .testimonial-header h2, .why-choose h2, .blog h1 {
+        font-size: 40px;
+    }
+
+    .subheading, .description, .header p, .consultaion-box .title p, .contact-details h4, .info-box p, .why-choose p, .blog .view-all {
+        font-size: 18px;
+    }
+
+    .consultaion-box .title h1, .consultaion-box .contact h1, .contact-details h2 {
+        font-size: 30px;
+    }
+
+    .why-choose {
+        padding: 210px 45px 45px 45px;
+    }
+
+    .client-logos img {
+        padding: 25px;
+    }
+
+    .testimonials {
+        padding: 0px 50px;
+    }
+
+    .blog {
+        padding: 80px 50px;
+    }
+
+    .blog-item .blog-content h3 {
+        font-size: 18px;
+    }
+
+    .blog-item .blog-content p, .contact-details a, .footer-bottom, .footer-links {
+        font-size: 12px;
+    }
+
+    .blog-item .blog-content h3, .blog-item .blog-content p, .blog-item .blog-content .meta {
+        font-size: 15px;
+    }
+
+    .contact-info {
+        width: 90%;
+        left: 2%;
+    }
+
+    .footer {
+        padding: 270px 45px 10px 45px;
+    }
+
+    .subscribe-area button {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1024px) {
+    /* Specific overrides for max-width 1024px */
+    .flag-overlay {
+        bottom: 6%;
+        left: 27%;
+    }
+
+    .hero-title {
+        font-size: 45px;
+    }
+
+    .logo-carousel .item {
+        width: 160px;
+        height: 100px;
+    }
+    
+    .logo-carousel .item img {
+        padding: 10px 35px;
+    }
+
+    .section-title, .header h1, .testimonial-header h2, .why-choose h2, .blog h1 {
+        font-size: 35px;
+    }
+
+    .subheading, .description, .header p, .consultaion-box .title p, .contact-details h4, .info-box p, .why-choose p, .blog .view-all {
+        font-size: 15px;
+    }
+
+    .consultaion-box .title h1, .consultaion-box .contact h1, .contact-details h2 {
+        font-size: 30px;
+    }
+
+    .consultaion-box .contact h1{
+        font-size: 25px;
+    }
+
+    .client-logos img {
+        padding: 0;
+    }
+
+    .contact-info {
+        width: 90%;
+        left: 0%;
+    }
+
+    .footer {
+        padding: 270px 45px 10px 45px;
+    }
+}
+
+

@@ -5,23 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar with Logo Carve</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <!-- Owl Carousel CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
 </head>
 <body>
     <!-- Navbar -->
     <header class="navbar">
         <!-- Logo with Carve -->
         <div class="logo">
-            
+            <!-- Logo goes here -->
         </div>
-        
-        
-        <!-- Navigation Links -->
+
+        <!-- Navigation Links (to be toggled) -->
         <nav class="nav-links">
             <a href="#" class="nav-link">Home</a>
             <a href="#" class="nav-link">Why Woods <span class="dropdown">&#9662;</span></a>
@@ -29,12 +33,21 @@
             <a href="#" class="nav-link">Blog</a>
             <a href="#" class="nav-link">Contact Us</a>
         </nav>
+        
         <!-- Call-to-Action -->
         <div class="cta">
             <span class="call-now">Click to Call Now</span>
             <a href="tel:(864)810-0384" class="phone-number">(864) 810-0384</a>
         </div>
+
+        <!-- Hamburger Menu Icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
     </header>
+
 
     <!-- Hero Section -->
     <section class="hero-section">
@@ -89,11 +102,9 @@
         <div class="item"><img src="Image/client/1.png" alt="CNN"></div>
         <div class="item"><img src="Image/client/2.png" alt="ABA"></div>
         <div class="item"><img src="Image/client/3.png" alt="AAJ"></div>
-        <div class="item"><img src="Image/client/4.png" alt="ABC"></div>
         <div class="item"><img src="Image/client/5.png" alt="FOX"></div>
         <div class="item"><img src="Image/client/6.png" alt="NACDL"></div>
-        <div class="item"><img src="Image/client/7.png" alt="NBC"></div>
-    </div>
+    </div>    
 
     <!-- Section Container -->
     <section class="criminal-defense-section">
@@ -157,14 +168,6 @@
                 </div>
             </div>
 
-            <!-- Domestic Violence -->
-            <div class="grid-item">
-                <img src="Image/Model/4.png" alt="Domestic Violence">
-                <div class="overlay">
-                    <p>Domestic Violence</p>
-                </div>
-            </div>
-
             <!-- Drug Crimes -->
             <div class="grid-item">
                 <img src="Image/Model/5.png" alt="Drug Crimes">
@@ -172,71 +175,311 @@
                     <p>Drug Crimes</p>
                 </div>
             </div>
+
+            <div class="grid-item">
+                <img src="Image/Model/4.png" alt="Domestic Violence">
+                <div class="overlay">
+                    <p>Domestic Violence</p>
+                </div>
+            </div>
         </div>
     </div>
 
     <section class="why-choose">
+        <div class="consultaion-box">
+            <div class="title">
+                <h1>Get a <span>FREE Consultation</span> Now</h1>
+                <p>Freddy Woods and staff are ready to speak with you.</p>
+            </div>
+            <div class="contact">
+                <p>Get Free Consultation</p>
+                <h1>(864)810-0384</h1>
+            </div>
+        </div>
+               
         <h2>WHY CHOOSE <span>THE WOODS LAW FIRM?</span></h2>
         <p>Our attorneys handle all types of criminal defense cases. There are no cases that are too small or too complex for us to take on. We help clients in the following areas:</p>
         
         <div class="info-boxes">
             <div class="info-box">
-                <h3>WE REPRESENT THE PEOPLE AGAINST THE POWERFUL?</h3>
-                <p>We represent people against the powerful. Our mission is focused on fighting for those who can’t fight for themselves. We handle all types of criminal defense cases, whether you’re accused of a minor misdemeanor or a major felony.</p>
+                <div class="row">
+                    <div class="col-5"><h3>WE REPRESENT THE PEOPLE AGAINST THE POWERFUL?</h3></div>
+                    <div class="col-7"><p>We represent people against the powerful. Our mission is focused on fighting for those who can’t fight for themselves. We handle all types of criminal defense cases, whether you’re accused of a minor misdemeanor or a major felony.</p></div>
+                </div>
             </div>
             <div class="info-box">
-                <h3>WE ARE TOP RATED, AWARD-WINNING ATTORNEYS?</h3>
-                <p>We take our obligation to aggressively defend you seriously. Therefore, our attorneys are continuously trained and updated on legal techniques to provide the best possible defense for our clients.</p>
+                <div class="row">
+                    <div class="col-5"><h3>WE ARE TOP RATED, AWARD-WINNING ATTORNEYS?</h3></div>
+                    <div class="col-7"><p>We take our obligation to aggressively defend you seriously. Therefore, our attorneys are continuously trained and updated on legal techniques to provide the best possible defense for our clients.</p></div>
+                </div>
             </div>
             <div class="info-box">
-                <h3>24/7 / 365 SERVICE?</h3>
-                <p>Our team is available to take your call at any time of the day or night. We are here to provide you the legal guidance and representation you need.</p>
+                <div class="row">
+                    <div class="col-5"><h3>24/7 / 365 SERVICE?</h3></div>
+                    <div class="col-7"><p>Our team is available to take your call at any time of the day or night. We are here to provide you the legal guidance and representation you need.</p></div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Testimonials Section -->
     <section class="testimonials">
-        <div class="testimonial-header">
-            <h2>WHAT OUR <span>CORE CLIENTS</span> ARE SAYING</h2>
-            <p>We've been fighting for our clients and winning for over 24 years. Our top-rated team has secured some of the largest verdicts and settlements for individuals and families who have faced powerful organizations and tough opponents.</p>
-        </div>
-
-        <!-- Client Logos -->
-        <div class="client-logos">
-            <img src="cnn.png" alt="CNN">
-            <img src="aba.png" alt="ABA">
-            <img src="fox.png" alt="Fox">
-            <img src="justice.png" alt="Justice">
-            <img src="nbc.png" alt="NBC">
-        </div>
-
-        <!-- Client Reviews -->
+        <div class="row g-6">
+            <div class="col-6">
+                <div class="testimonial-left">
+                    <div class="testimonial-header">
+                        <h2>WHAT OUR <span>CORE CLIENTS</span> ARE SAYING</h2>
+                        <p>We've been fighting for our clients and winning for over 24 years. Our top-rated team has secured some of the largest verdicts and settlements for individuals and families who have faced powerful organizations and tough opponents.</p>
+                    </div>
+            
+                    <!-- Client Logos -->
+                    <div class="client-logos">
+                        <div class="row g-4">
+                            <div class="col-4"><div class="client"><img src="Image/client/c1.png" alt="CNN"></div></div>
+                            <div class="col-4"><div class="client"><img src="Image/client/c2.png" alt="ABA"></div></div>
+                            <div class="col-4"><div class="client"><img src="Image/client/c3.png" alt="Fox"></div></div>
+                            <div class="col-4"><div class="client"><img src="Image/client/c4.png" alt="Justice"></div></div>
+                            <div class="col-4"><div class="client"><img src="Image/client/c5.png" alt="NBC"></div></div>
+                            <div class="col-4"><div class="client"><img src="Image/client/c6.png" alt="NBC"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <!-- Client Reviews -->
         <div class="reviews">
-            <div class="review-card">
-                <p class="stars">★★★★★</p>
-                <p><strong>Highly Recommend</strong></p>
-                <p>"Their attention to detail and commitment to the case was impressive. I am very happy with the outcome!"</p>
-                <p>- Alexis</p>
-            </div>
-            <div class="review-card">
-                <p class="stars">★★★★★</p>
-                <p><strong>Highly Recommend</strong></p>
-                <p>"They handled my case professionally and guided me every step of the way. I felt confident with them!"</p>
-                <p>- Alexis</p>
-            </div>
-            <div class="review-card">
-                <p class="stars">★★★★★</p>
-                <p><strong>Highly Recommend</strong></p>
-                <p>"The team went above and beyond to fight for me. I would highly recommend them to anyone!"</p>
-                <p>- Alexis</p>
+            <div class="reviews-slider">
+                <div class="review-card">
+                    <p class="stars">★★★★★</p>
+                    <p><strong>Highly Recommend</strong></p>
+                    <p>"Their attention to detail and commitment to the case was impressive. I am very happy with the outcome!"</p>
+                    <p>- Alexis</p>
+                </div>
+    
+                <div class="review-card">
+                    <p class="stars">★★★★★</p>
+                    <p><strong>Highly Recommend</strong></p>
+                    <p>"Their attention to detail and commitment to the case was impressive. I am very happy with the outcome!"</p>
+                    <p>- Alexis</p>
+                </div>
+    
+                <div class="review-card">
+                    <p class="stars">★★★★★</p>
+                    <p><strong>Highly Recommend</strong></p>
+                    <p>"Their attention to detail and commitment to the case was impressive. I am very happy with the outcome!"</p>
+                    <p>- Alexis</p>
+                </div>
+    
+                <div class="review-card">
+                    <p class="stars">★★★★★</p>
+                    <p><strong>Highly Recommend</strong></p>
+                    <p>"Their attention to detail and commitment to the case was impressive. I am very happy with the outcome!"</p>
+                    <p>- Alexis</p>
+                </div>
+                <div class="review-card">
+                    <p class="stars">★★★★★</p>
+                    <p><strong>Highly Recommend</strong></p>
+                    <p>"Their attention to detail and commitment to the case was impressive. I am very happy with the outcome!"</p>
+                    <p>- Alexis</p>
+                </div>
+    
+                <div class="review-card">
+                    <p class="stars">★★★★★</p>
+                    <p><strong>Highly Recommend</strong></p>
+                    <p>"Their attention to detail and commitment to the case was impressive. I am very happy with the outcome!"</p>
+                    <p>- Alexis</p>
+                </div>
+    
+                <div class="review-card">
+                    <p class="stars">★★★★★</p>
+                    <p><strong>Highly Recommend</strong></p>
+                    <p>"Their attention to detail and commitment to the case was impressive. I am very happy with the outcome!"</p>
+                    <p>- Alexis</p>
+                </div>
+    
+                <div class="review-card">
+                    <p class="stars">★★★★★</p>
+                    <p><strong>Highly Recommend</strong></p>
+                    <p>"Their attention to detail and commitment to the case was impressive. I am very happy with the outcome!"</p>
+                    <p>- Alexis</p>
+                </div>
             </div>
         </div>
+            </div>
+        </div>
+    
+        
     </section>
+
+    <!-- Blog -->
+    <section class="blog">
+        <div class="blog-header">
+            <h1>OUR <span>BLOG</span></h1>
+            <a class="view-all" href="">VIEW ALL</a>
+        </div>
+
+        <div class="row">
+            <div class="col-4">
+                <div class="blog-item">
+                    <a href="">
+                        <div class="blog-content">
+                            <h3>How Do Insurance Companies Calculate Lost Wages After A Wreck In North Carolina?</h3>
+                            <p>After a car accident, the repercussions go beyond immediate physical and emotional effects. The financial impact, especially on lost wages, can be significant for many victims. In North Carolina, there are specific...</p>
+                            <span class="meta">24 Dec 2023 - 7 min read</span>
+                        </div>
+                        <img src="Image/blogs/1.jpg" alt="Blog Image 1">
+                    </a>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="blog-item">
+                    <a href="">
+                        <div class="blog-content">
+                            <h3>How Do Insurance Companies Calculate Lost Wages After A Wreck In North Carolina?</h3>
+                            <p>After a car accident, the repercussions go beyond immediate physical and emotional effects. The financial impact, especially on lost wages, can be significant for many victims. In North Carolina, there are specific...</p>
+                            <span class="meta">24 Dec 2023 - 7 min read</span>
+                        </div>
+                        <img src="Image/blogs/2.jpg" alt="Blog Image 2">
+                    </a>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="blog-item">
+                    <a href="">
+                        <div class="blog-content">
+                            <h3>How Do Insurance Companies Calculate Lost Wages After A Wreck In North Carolina?</h3>
+                            <p>After a car accident, the repercussions go beyond immediate physical and emotional effects. The financial impact, especially on lost wages, can be significant for many victims. In North Carolina, there are specific...</p>
+                            <span class="meta">24 Dec 2023 - 7 min read</span>
+                        </div>
+                        <img src="Image/blogs/3.jpg" alt="Blog Image 3">
+                    </a>
+                </div>
+            </div>
+        </div>               
+    </section>
+
+   
+    <section class="map">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3270.5003355361996!2d-82.25352192368076!3d34.944066370115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88582ae7124004e7%3A0x72e73d61c1fed0f1!2sThe%20Woods%20Law%20Firm!5e0!3m2!1sen!2sbd!4v1734712347015!5m2!1sen!2sbd"
+            width="100%" 
+            height="550" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>    
+
+    <footer class="footer">
+        <div class="contact-info">
+            <div class="row g-0">
+                <div class="col-3">
+                    <div class="contact-details">
+                        <h2>GREER,SC</h2>
+                        <h4>THE WOODS LAW FIRM</h4>
+                        <p>955 WEST WADE HAMPTON BLVD, #10B, GREER, SC 29650</p>
+                        <a href="">Law Office Direction</a>
+                        <h5>Free Consultation </h5>
+                        <h3>864-298-8111</h3>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="contact-details">
+                        <h2>GREER,SC</h2>
+                        <h4>THE WOODS LAW FIRM</h4>
+                        <p>955 WEST WADE HAMPTON BLVD, #10B, GREER, SC 29650</p>
+                        <a href="">Law Office Direction</a>
+                        <h5>Free Consultation </h5>
+                        <h3>864-298-8111</h3>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="contact-details">
+                        <h2>GREER,SC</h2>
+                        <h4>THE WOODS LAW FIRM</h4>
+                        <p>955 WEST WADE HAMPTON BLVD, #10B, GREER, SC 29650</p>
+                        <a href="">Law Office Direction</a>
+                        <h5>Free Consultation </h5>
+                        <h3>864-298-8111</h3>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="contact-details">
+                        <h2>GREER,SC</h2>
+                        <h4>THE WOODS LAW FIRM</h4>
+                        <p>955 WEST WADE HAMPTON BLVD, #10B, GREER, SC 29650</p>
+                        <a href="">Law Office Direction</a>
+                        <h5>Free Consultation </h5>
+                        <h3>864-298-8111</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-up">
+            <div class="row g-5"> <!-- Increased gap to 5 -->
+                <div class="col-4">
+                    <div class="footer-description">
+                        <img src="Image/logofooter.png" alt="">
+                        <p>At the Woods Law Firm, we represent people against the powerful. 
+                            Our mission is focused on fighting for your rights against prosecutors 
+                            and the court system. We are dedicated to helping you get the best 
+                            possible outcome for your case.</p>
+            
+                            <div class="footer-social-links">
+                                <a href="#"><img src="Image/social/Instagram - Negative.png" alt="Instagram"></a>
+                                <a href="#"><img src="Image/social/YouTube - Negative.png" alt="YouTube"></a>
+                                <a href="#"><img src="Image/social/Facebook - Negative.png" alt="Facebook"></a>
+                                <a href="#"><img src="Image/social/layer1.png" alt="X"></a>
+                            </div>                        
+                    </div>
+                </div>
+                <div class="col-4">
+                    <h3>Quick Links</h3>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="footer-links">
+                                <a href="">Home</a>
+                                <a href="">About</a>
+                                <a href="">Practice Areas</a>
+                                <a href="">Why Woods</a>
+                                <a href="">FAQ</a>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="footer-links">
+                                <a href="">Media</a>
+                                <a href="">Testimonials</a>
+                                <a href="">Case Results</a>
+                                <a href="">Blog</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="subscribe-area">
+                        <h3 class="title">Join Newsletter</h3>
+                        <p>Stay upto dated with the revolutionary legal technology. </p>
+                        <input type="email" placeholder="Enter Your Email">
+    
+                        <button type="submit" class="btn btn-danger">SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            2024 The Woods Law Firm . All Rights Reserved 
+            <a href=""> Disclaimer</a> 
+            <a href="">Site Map</a> 
+            <a href="">Privacy Policy</a>
+        </div>
+        
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function(){
             $('.logo-carousel').owlCarousel({
@@ -245,12 +488,44 @@
                 autoplay: true,
                 autoplayTimeout: 2000,
                 responsive: {
-                    0: { items: 2 },
-                    600: { items: 4 },
-                    1000: { items: 6 }
+                    0: { 
+                        items: 2, 
+                        margin: 10 
+                    },
+                    600: { 
+                        items: 3 
+                    },
+                    1000: { 
+                        items: 6 // Adjust to a smaller number of items for 1024px screens
+                    }
                 }
             });
         });
+
     </script>
+
+    <script>
+        function truncateText(selector, wordLimit) {
+            const elements = document.querySelectorAll(selector);
+            elements.forEach(element => {
+                const words = element.textContent.split(' ');
+                if (words.length > wordLimit) {
+                    element.textContent = words.slice(0, wordLimit).join(' ') + '...';
+                }
+            });
+        }
+
+        // Truncate h3 to 37 words and p to 50 words
+        truncateText('.blog-content h3', 7);
+        truncateText('.blog-content p', 16);
+    </script>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+
 </body>
 </html>
